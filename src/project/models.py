@@ -14,6 +14,9 @@ class Usuario(db.Model):
     grafica = db.Column(db.String, nullable=True)
     direct_x = db.Column(db.String, nullable=True)
     gusto = db.Column(db.String, nullable=True)
+    confirmation = db.Column(db.String, nullable=False)
+    age = db.Column(db.String, nullable=False)
+
 
     def __init__(self, **kwargs):
         super(Usuario, self).__init__(**kwargs)
